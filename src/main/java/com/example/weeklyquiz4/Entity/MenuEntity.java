@@ -1,4 +1,4 @@
-package com.example.weeklyquiz4;
+package com.example.weeklyquiz4.Entity;
 
 import lombok.AllArgsConstructor;
 import lombok.Getter;
@@ -9,7 +9,7 @@ import lombok.Setter;
 @Setter
 @NoArgsConstructor
 @AllArgsConstructor
-public class menuEntity {
+public class MenuEntity {
     private String menuName;
     private String menuCategory;
     private String price;

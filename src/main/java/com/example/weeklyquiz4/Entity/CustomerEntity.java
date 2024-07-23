@@ -1,4 +1,4 @@
-package com.example.weeklyquiz4;
+package com.example.weeklyquiz4.Entity;
 
 import lombok.AllArgsConstructor;
 import lombok.Getter;
