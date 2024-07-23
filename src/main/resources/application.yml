@@ -1,14 +1,22 @@
-# application-test.yml
-server:
-  port: 8081
-
 spring:
-  application:
-    name: MyApp-Dev
+  datasource:
+    url: jdbc:mysql://localhost:3306/restaurant
+    username: root
+    password: '0000'
+    driver-class-name: com.mysql.cj.jdbc.Driver
 
-  thymeleaf:
-    cache: false
-    prefix: classpath:/templates/
-    suffix: .html
-    mode: HTML
-    encoding: UTF-8
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+    properties:
+      hibernate:
+        format_sql: true
+
+server:
+  port: 8080
+
+logging:
+  level:
+    org.hibernate.SQL: DEBUG
+    org.hibernate.type.descriptor.sql.BasicBinder: TRACE
