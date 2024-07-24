@@ -1,4 +1,4 @@
-package com.example.weeklyquiz4.Entity;
+package com.example.weeklyquiz4.entity;
 
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
