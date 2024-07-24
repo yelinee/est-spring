@@ -1,4 +1,4 @@
-package com.example.weeklyquiz4.Entity;
+package com.example.weeklyquiz4.entity;
 
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
@@ -26,7 +26,7 @@ public class MenuEntity {
     private String menuCategory;
 
     @Column(nullable = false)
-    private String price;
+    private int price;
 
     @Column(name = "menu_description", nullable = false)
     private String menuDescription;
