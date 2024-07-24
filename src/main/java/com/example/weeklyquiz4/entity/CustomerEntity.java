@@ -1,4 +1,4 @@
-package com.example.weeklyquiz4.Entity;
+package com.example.weeklyquiz4.entity;
 
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
@@ -13,6 +13,7 @@ import lombok.Setter;
 @NoArgsConstructor
 @AllArgsConstructor
 public class CustomerEntity {
+
     @Id
     @Column(name = "customer_id")
     @GeneratedValue(strategy = GenerationType.IDENTITY)
