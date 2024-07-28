@@ -7,10 +7,8 @@ import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Builder;
 
-import java.awt.*;
-
 /**
- * DTO for {@link com.example.weeklyquiz4.entity.MenuEntity}
+ * DTO for {@link MenuEntity}
  */
 @Getter
 @NoArgsConstructor

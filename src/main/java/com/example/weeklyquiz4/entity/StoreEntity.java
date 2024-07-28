@@ -15,13 +15,17 @@ import lombok.Setter;
 public class StoreEntity {
 
     @Id
-    @Column(name ="store_id")
+    @Column(name = "store_id")
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private int storeId;
 
-    @Column(name = "store_name", nullable = false)
+    @Column(name = "store_name")
     private String storeName;
 
-    @Column(nullable = false)
-    private Long sales;
+    @Column(name = "store_address")
+    private String storeAddress;
+
+    @Column(name = "store_number")
+    private String storePhoneNumber;
 }
+
