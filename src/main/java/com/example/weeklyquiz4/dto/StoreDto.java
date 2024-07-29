@@ -11,8 +11,27 @@ import lombok.*;
 @NoArgsConstructor
 @AllArgsConstructor
 public class StoreDto {
-    int storeId;
-    String storeName;
-    String storeAddress;
-    String storePhoneNumber;
+    private Long storeId;
+    private String storeName;
+    private String storeAddress;
+    private String storePhoneNumber;
+
+    // Entity -> DTO
+    public static StoreDto fromEntity(StoreEntity storeEntity) {
+        return StoreDto.builder()
+                .storeId(storeEntity.getStoreId())
+                .storeName(storeEntity.getStoreName())
+                .storeAddress(storeEntity.getStoreAddress())
+                .storePhoneNumber(storeEntity.getStorePhoneNumber())
+                .build();
+    }
+
+    // DTO -> Entity
+    public StoreEntity toEntity() {
+        return new StoreEntity(
+                this.storeId,
+                this.storeName,
+                this.storeAddress,
+                this.storePhoneNumber);
+    };
 }

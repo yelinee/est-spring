@@ -27,6 +27,5 @@ public class OrderItemEntity {
 
     @Column(nullable = false)
     private int price;
-    // private int userId;
 
 }
